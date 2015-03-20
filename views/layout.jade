@@ -1,15 +1,34 @@
 doctype
-html
+html(lang='en')
   head
-    title #{title} - My Site
+    title #{title} - Happy Website
     link(rel='stylesheet', href='/stylesheets/style.css')
+    lang 
   body
-    header
-      h1 My Site
+    
+    .header
+      block header
+
     .container
-      .main-content
-        block content
-      .sidebar
-        block sidebar
-    footer
-      p Running on node with Express, Jade and Stylus
+      .goodDeeds
+        block goodDeeds
+      .uploadArea.clear
+        .textUpload
+          block textUpload
+          form  
+            button.subButton Submit
+        .orArea
+          h1 OR
+        .imgUpload
+          block imgUpload
+      .displayArea
+        block displayArea    
+    .footer.clear
+      .footerInfo
+        .colL
+          Copyright @ 2015
+        .colC
+          Connect with Us
+        .colR
+          Other Projects
+        
