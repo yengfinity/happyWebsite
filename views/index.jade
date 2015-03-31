@@ -1,7 +1,7 @@
 extend layout
 block content
   p
-    | Vivamus hendrerit arcu sed erat molestie
+    | Block Content from Main Vivamus hendrerit arcu sed erat molestie
     | vehicula. Sed auctor neque eu tellus
     | rhoncus ut eleifend nibh porttitor. Ut in.
   p
@@ -11,12 +11,50 @@ block content
     | lectus vestibulum faucibus eget in metus.
     | In pellentesque faucibus vestibulum. Nulla
     | at nulla justo, eget luctus tortor.
-block sidebar
-  .widget
-    h1 Widget
-    p
-      | Sed auctor neque eu tellus rhoncus ut
-      | eleifend nibh porttitor. Ut in nulla enim.
-    p
-      | Vivamus hendrerit arcu sed erat molestie
-      | vehicula.
+
+block header
+    ul.nav.clear
+      li About Us
+      li Upload
+      li Contact Us
+block goodDeeds
+  .scrollDeeds
+    img(src='../../images/goodDeeds.jpg')
+    //- img(src='https://www.skiinghistory.org/sites/skiinghistory.org/files/placeholder-headshot_25.jpg', alt='Happy Thoughts')
+    //- img(src='https://www.skiinghistory.org/sites/skiinghistory.org/files/placeholder-headshot_25.jpg', alt='Happy Thoughts')
+    //- img(src='https://www.skiinghistory.org/sites/skiinghistory.org/files/placeholder-headshot_25.jpg', alt='Happy Thoughts')
+block textUpload
+  h1 Text Area
+  form
+    textarea(rows='15', cols='60')             
+block imgUpload
+  img(src='../../images/goodDeeds.jpg')
+block displayArea
+  h1 Display Area
+    .r_arrow_box.clear
+      p.deedQuotes
+        |  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        |  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        |  consequat. Duis aute irure dolor in reprehenderit
+        |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repudiandae aperiam veniam esse ipsam suscipit illo aliquam rem nostrum. At et vitae, nesciunt neque quam ullam tempore optio modi ad.
+    .proAvatar.clear
+      img(src='http://api.adorable.io/avatars/185/b@adorable.io.png')
+
+    .l_arrow_box
+      p.deedQuotes
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repudiandae aperiam veniam esse ipsam suscipit illo aliquam rem nostrum. At et vitae, nesciunt neque quam ullam tempore optio modi ad.
+    
+    .proAvatar.clear
+      img(src='http://api.adorable.io/avatars/185/c@adorable.io.png')
+
+    .r_arrow_box.clear
+      img(src="../../images/goodDeeds.jpg" style="width: 65%; margin: 2em; text-align: center" class="deedQuotes")   
+    
+    .proAvatarAdj.clear
+        img(src="http://api.adorable.io/avatars/185/d@adorable.io.png")
+      

@@ -1,11 +1,30 @@
 {
-  "name": "MySite",
+  "name": "happyWebsite",
   "version": "0.0.1",
-  "private": "true",
-  "dependencies": {
+  "description": "dependencies for happyWebsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+"dependencies": {
     "express": "3.0.0alpha4",
     "jade": "*",
     "stylus": "*",
-    "nib": "*"
-  }
+    "nib": "*",
+    "nodemon": "*"
+  },
+
+
+  "repository": {
+    "type": "git",
+    "url": "www.github.com/yenglee"
+  },
+  "keywords": [
+    "happyWebsite"
+  ],
+  "author": "Yenglee, KeoSepth and Byron6",
+  "license": "MIT"
+
 }
+
