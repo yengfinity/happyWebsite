@@ -189,10 +189,19 @@ header {
   font-size: 1.5em;
 }
 .scrollDeeds {
+  height: 100%;
   background: #f6f8f5;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.scrollDeeds img {
+margin-right: 20px;
+height: 100%;
 }
 .goodDeeds {
   background-color: #808080;
+
 }
 .goodDeeds p {
   color: #000;
